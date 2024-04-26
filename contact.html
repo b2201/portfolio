@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人用ポートフォリオ</title>
+  <!-- reset.css destyle -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="sub.js" defer></script>
+  <script src="main.js" defer></script>
+
+</head>
+
+<body>
+  <div id="loading">
+    <p>Loading... </p>
+    <div id="loading-screen"></div>
+  </div>
+
+  <!-- Hero section navigationエリア -->
+  <div class="hero">
+    <nav>
+      <!-- ページ内リンク -->
+      <ul>
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a href="index.html">WORKS</a></li>
+        <li><a href="index.html">SKILLS</a></li>
+      </ul>
+      <ul>
+        <!-- contact htmlへリンク -->
+        <li><a href="./index.html" class="btn">portfolio</a></li>
+        <li><button id="btn">ダークモードにする</button></li>
+      </ul>
+    </nav>
+    <div class="container">
+
+        <h1>お問い合わせ</h1>
+      
+        <form action="submit.php" method="post">
+          <div class="youname">
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="youmail">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="youmessa">
+            <label for="message">お問い合わせ内容:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">送信</button>
+        </form>
+      </div>
+    
+  </div>
+  <!-- footer -->
+  <footer>
+
+    <p class="end">CopyRight@Sakamoto portfolio</p>
+    <p>icon by <a href="https://icons8.com">Icons8</a></p>
+
+  </footer>
+</body>
+
+</html>

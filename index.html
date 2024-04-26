@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人用ポートフォリオ</title>
+  <!-- reset.css destyle -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="sub.js" defer></script>
+  <script src="main.js" defer></script>
+
+</head>
+
+<body>
+  <div id="loading">
+    <p>Loading... </p>
+    <div id="loading-screen"></div>
+  </div>
+
+  <!-- Hero section navigationエリア -->
+  <div class="hero">
+    <nav>
+      <!-- ページ内リンク -->
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+      </ul>
+      <ul>
+        <!-- contact htmlへリンク -->
+        <li><a href="./contact.html" class="btn">お問い合わせ</a></li>
+        <li><button id="btn">ダークモードにする</button></li>
+      </ul>
+
+    </nav>
+    <!-- /Hero section navigationエリア -->
+
+    <!-- portfolio-Infoエリア -->
+    <div class="portfolio-p">
+      <div class="body">
+        <div class="portfolioInfo">
+          <!-- <h1>Sakamoto<br>Katsunori</h1>
+          <h3>Portfolio</h3> -->
+
+        </div>
+        <img src="./img/1080p.png" alt="写真01" class="images" />
+      </div>
+    </div>
+    <!-- /portfolio-Infoエリア -->
+
+  </div>
+
+  <!-- About Section エリア -->
+  <section class="about">
+    <div class="main">
+      <img src="./img/profile02.png" alt="写真02" class="images" />
+      <div class="about-text">
+        <h2 id="about">ABOUT</h2>
+        <h5>Katsunori Sakamotoのプロフィール</h5>
+        <p>
+          名前　：坂本　克徳<br>
+          所在地：熊本県<br>
+
+          接客業界で約3年、建設業界で約5年、業務に従事してきました。
+          <br>接客業界では、ホールスタッフを経験しました。<br>
+          建設業界では、解体、土木、外構を行ってきました。<br>
+          IT業界への転職を決意し一念発起しました。
+          強みは、日々成長を心掛け、学習を継続して行えることです。
+          現在Javascript、Java言語を勉強中<br>
+          令和6年8月より通信制大学進学予定
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- /About Section エリア -->
+
+
+  <!-- works section  -->
+  <!-- img クリック拡大　下にlink -->
+  <section class="works-img">
+    <div class="works-text">
+      <h2 id="works">WORKS</h2>
+      <h3>職業訓練校在位学中に作成した制作物です</h3>
+      <ul class="p1">
+        <li class="images">
+          <a href="#">
+          <img src="img/Boot01.png" alt="制作物">
+          <br>
+          <p class="explanation">webサイト　自主制作</p>
+          </a>
+        </li>
+
+        <li class="images">
+          <a href="typing-javascript/index.html"> 
+          <img src="img/typing01.png" alt="制作物" width="200" height="200">
+          <br>
+            <p class="explanation">typinggame</p>
+          </a>
+        </li>
+
+        <li class="images">
+          <a href="./bs05_tart/index.html">
+          <img src="img/Boot01.png" alt="制作物">
+          <br>
+            <p class="explanation">BootStrap いちごタルト</p>
+          </a>
+        </li>
+
+        <li class="images">
+          <a href ="bs03_watch/index_01.html">
+          <img src="img/watch01.png" alt="制作物" width="200" height="200">
+          <br>
+            <p class="explanation">bootstrap 時計屋</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /works section  -->
+
+
+  <!-- skills エリア -->
+  <!-- スキルを画像に変えて3x3にする 背景色を灰色にする-->
+  <section class="service">
+    <div class="title">
+      <h2 id="skills">SKILLS</h2>
+      <h3>扱える技術・ツールになります</h3>
+    </div>
+
+    <div class="box">
+      <ul class="card-ul">
+        <li class="card">
+          <i class="fas fa-bars"> </i>
+          <h5>HTML/CSS</h5>
+          <img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1" class="images"/>
+          <img width="96" height="96" src="https://img.icons8.com/color/96/css3.png" alt="css3" class="images"/>
+          <div class="pra">
+            <p>
+              webサイトのコーディング<br>
+            </p>
+          </div>
+        </li>
+
+        <li class="card">
+          <i class="fas fa-user"> </i>
+          <h5>Javascript</h5>
+          <img width="96" height="96" src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript--v1" class="images"/>
+          <div class="pra">
+            <p>
+              画面のアニメーション
+            </p>
+            <p style="text-align: center">
+
+            </p>
+          </div>
+        </li>
+
+
+        <li class="card">
+          <i class="fas fa-bell"> </i>
+          <h5>PhotoShop/illustrator</h5>
+          <img width="96" height="96" src="https://img.icons8.com/color/96/adobe-photoshop--v1.png"
+            alt="adobe-photoshop--v1" class="images">
+          <img width="96" height="96" src="https://img.icons8.com/color/96/adobe-illustrator--v1.png"
+            alt="adobe-illustrator--v1" class="images">
+          <div class="pra">
+            <p>
+              画像の編集、書き出し
+            </p>
+          </div>
+        </li>
+
+        <li class="card">
+          <i class="fas fa-bell"> </i>
+          <h5>BootStrap</h5>
+          <img width="96" height="96" src="https://img.icons8.com/color/96/bootstrap--v2.png" alt="bootstrap--v2" class="images">
+          <div class="pra">
+            <p>
+              webサイトのコーディング
+            </p>
+          </div>
+        </li>
+        <li class="card">
+          <i class="fas fa-bell"> </i>
+          <h5>WordPress</h5>
+          <img width="96" height="96" src="https://img.icons8.com/color/96/wordpress.png" alt="wordpress" class="images">
+          <div class="pra">
+            <p>
+              webサイトのコーディング
+            </p>
+          </div>
+        </li>
+        <li class="card">
+          <i class="fas fa-bell"> </i>
+          <h5>Canva</h5>
+          <img width="96" height="96" src="https://img.icons8.com/color/96/canva.png" alt="canva" class="images">
+          <div class="pra">
+            <p>
+              パンフレット、チラシ作成
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- Contact Me -->
+  <div class="contact">
+    <h2>CONTACT</h2>
+    <p>お問い合わせお待ちしております。</p>
+    <a href="./contact.html" class="button-two">お問い合わせ</a>
+  </div>
+
+  <!-- footer -->
+  <footer>
+
+    <p class="end">CopyRight@Sakamoto portfolio</p>
+    <p>icon by <a href="https://icons8.com">Icons8</a></p>
+
+  </footer>
+</body>
+
+</html>

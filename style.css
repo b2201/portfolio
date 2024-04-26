@@ -1,0 +1,548 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Zen+Maru+Gothic:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Zen Maru Gothic',serif;
+}
+
+/*
+LOADING
+================================================ */
+#loading {
+  background-color: var(--light-grey);
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+
+#loading-screen {
+  background-color: var(--light-green);
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  translate: 0 100vh;
+}
+
+#loading p {
+  font-size: 3rem;
+  font-family: var(--oswald-font);
+}
+
+/* ========================================= */
+
+/*
+VARIABLES
+================================================ */
+:root {
+  --light-green: #d5edeb;
+  --green: #63dbd0;
+  --brown: #403632;
+  --light-grey: #eee;
+  --white: #fff;
+  --oswald-font: 'Open sans', sans-serif;
+}
+
+
+
+/* navigation .portfolio-pエリア */
+.hero {
+  height: 110vh;
+  width: 100%;
+  background-color: #ADDCDB;
+}
+/* ========================================= */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 5% 0 8%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+/* 色変更 */
+nav ul li a {
+  color: black;
+  font-family: 'Open Sans',sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+/* カーソル色変更 */
+nav ul li a:hover {
+  color: white;
+}
+
+/* お問い合わせボタン */
+.btn {
+  background-color: lightseagreen;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  transition: all 0.3s;
+}
+
+/* 形変更 */
+.btn:hover {
+  transform: scale(1.2);
+  border-radius: 20px;
+}
+/* ======================================== */
+/* javascript ダークテーマ */
+
+.dark-theme .hero{
+  background-color:#0A1E27;
+  color:#ddd;
+}
+
+.dark-theme h1{
+  color: white;
+}
+
+.dark-theme .about{
+  background-color:#1A5B71;
+  color:#ddd;
+}
+.dark-theme .about h2{
+  color: white;
+}
+.dark-theme .about h5{
+  color: white;
+}
+.dark-theme .about p{
+  color: white;
+}
+.dark-theme .works-text{
+  background-color:#0A1E27;
+  color:#ddd;
+}
+.dark-theme .works-img h2{
+color: white;
+}
+.dark-theme .works-img h3{
+color: white;
+}
+.dark-theme .service{
+  background-color:#1A5B71;
+  color:white;
+}
+.dark-theme .card{
+  background-color:#1A5B71;
+}
+.dark-theme .service h2{
+  color:white;
+}
+.dark-theme .service h3{
+  color:white;
+}
+.dark-theme .service h5{
+  color:white;
+}
+.dark-theme .service p{
+  color:white;
+}
+
+.dark-theme .contact{
+  background-color: #1A5B71;
+}
+.dark-theme .contact h2{
+color: white;}
+.dark-theme .contact p{
+color: white;}
+
+.dark-theme nav ul li a{
+  color: white;
+}
+.dark-theme nav ul li a:hover {
+  color: darkgray;
+}
+
+.dark-theme .btn{
+  background-color: lightseagreen;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  transition: all 0.3s;
+}
+
+#btn{
+  background-color: #0bd;
+  padding: 1rem;
+  /* margin-bottom: 2rem; */
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+/* ================================================ */
+
+/* portfolio の上の余白 */
+.portfolio-p {
+  padding-top: 230px;
+}
+
+.portfolio-p  .body {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: auto;
+  padding-left: auto;
+}
+
+/* hero */
+.portfolio-p  .body img {
+  width: 100vw;
+  height: 50vw;
+  /* -で上に出す */
+  margin-top: -150px;
+}
+/* 名前 */
+h1 {
+  color: black;
+  margin: 20px 0 20px;
+  font-size: 75px;
+}
+/* portfolio */
+
+/* 日本語文 */
+.portfolioInfo h3 {
+  color: #EA5432;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+/* ======================================== */
+/* プロフィールエリア */
+.about {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #CCE9ED;
+}
+/* 顔写真のサイズ */
+.about img {
+  height: auto;
+  width: 430px;
+}
+/* About内のテキスト */
+.about-text {
+  width: 550px;
+}
+/* imgとテキストを整列 */
+.main {
+  width: 1130px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  color: black;
+  font-family: "Open sans",sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about-text h3 {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-text h5 {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+/* ========================================= */
+
+/* ===================================== */
+/* skills */
+.service {
+  background: #CCE9ED;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.title h2 {
+  color: black;
+  font-family: "Open sans",sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 30px auto;
+  text-align: center;
+}
+.title h3 {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 25px ;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card-ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  width: 365px;
+  background-color: #CCE9ED;
+  padding: 20px 35px;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: lightseagreen;
+}
+
+.card h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* スキル説明 */
+.pra {
+  color: black;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}/* ======================================= */
+/* works エリア*/
+.works-text{
+  background-color: #ADDCDB;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+
+}
+.works-img{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+/* works */
+.works-text h2{
+  color: black;
+  font-family: "Open sans",sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px auto;
+
+}
+/* 訓練校在学 */
+li{
+  list-style: none;
+}
+
+.works-text h3{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-size: 22px;
+  margin-bottom: 25px;
+
+}
+
+.p1 {
+  margin: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.explanation {
+  font-family: 'Zen Maru Gothic',sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px; /* 適宜マージンを調整してください。 */
+}
+
+.p1 a {
+  margin-right: 10px; /* 適宜マージンを調整してください。 */
+}
+
+.p1 li{
+  margin: 0 120px 80px 120px;
+}
+
+.explanation {
+  text-align: center;
+}
+
+/* ========================================= */
+.contact {
+  width: 100%;
+  height: 150px;
+  background: #CCE9ED;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact h2{
+  color: black;
+  font-family: "Open sans",sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 10px;
+
+}
+
+.contact p {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact .button-two {
+  background-color: lightseagreen;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.3s;
+  margin-bottom: 50px;
+}
+
+.contact .button-two:hover {
+  background-color: transparent;
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+/* =========================================== */
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #D9A150;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p:nth-child(1) {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer p:nth-child(2) {
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.end {
+  color: white;
+  font-size: 16px;
+}
+/* ========================================== */
+/* お問い合わせページ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004685;
+}
